@@ -4,7 +4,7 @@ import Meta from "../components/Meta";
 import { Link, useNavigate } from "react-router-dom";
 import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
-import * as bcrypt from "bcryptjs";
+// import * as bcrypt from "bcryptjs";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -58,7 +58,8 @@ const Signup = () => {
   };
 
   const hash = (password) => {
-    return bcrypt.hashSync(password, 10);
+    // return bcrypt.hashSync(password, 10);
+    return 10
   };
 
   return (

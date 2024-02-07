@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Meta from "../components/Meta";
 import BreadCrumb from "../components/BreadCrumb";
 import { Container } from "react-bootstrap";
-import * as bcrypt from "bcryptjs";
+// import * as bcrypt from "bcryptjs";
 
 const ChangePassword = () => {
     const { id } = useParams();
@@ -34,7 +34,8 @@ const ChangePassword = () => {
         }
     };
     const hash = (password) => {
-        return bcrypt.hashSync(password, 10);
+        // return bcrypt.hashSync(password, 10);
+        return '10'
       };
     const handleSubmit = (e) => {
         e.preventDefault();
