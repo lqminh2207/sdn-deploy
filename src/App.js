@@ -23,7 +23,9 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import { ToastContainer } from "react-toastify";
 import { AppRouter } from "./routes/router";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+// var MessengerPlugin = require("react-messenger-plugin");
+import { MessengerChat } from "react-messenger-chat-plugin";
+
 function App() {
   return (
     <>
@@ -54,11 +56,17 @@ function App() {
         </Routes>
       </BrowserRouter> */}
       <AppRouter />
-      <MessengerCustomerChat
+
+      <MessengerChat pageId='61556173384943' />
+      {/* <MessengerPlugin
+        pageId="61556173384943"
+        appId="329527983419602"
+      />, */}
+      {/* <MessengerCustomerChat
         pageId="61556173384943"
         appId="329527983419602"
         htmlRef="<REF_STRING>"
-      />
+      /> */}
     </>
   );
 }
