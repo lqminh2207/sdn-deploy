@@ -57,7 +57,7 @@ function App() {
       </BrowserRouter> */}
       <AppRouter />
 
-      <MessengerChat pageId='207709222433574' />
+      <MessengerChat pageId='207709222433574' appId='329527983419602' />
       {/* <MessengerPlugin
         pageId="61556173384943"
         appId="329527983419602"
